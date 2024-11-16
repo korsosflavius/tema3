@@ -11,14 +11,13 @@ public class MainApp {
         try {
             List<Parabola> parabole = new ArrayList<>();
             try {
-                File file = new File("src/tema3/in.csv");
                 Scanner sc = new Scanner(new File("src/tema3/in.csv"));
                 while (sc.hasNextLine()) {
                     String line = sc.nextLine();
-                    String[] coef = line.split(",");
-                    int a = Integer.parseInt(coef[0]);
-                    int b = Integer.parseInt(coef[1]);
-                    int c = Integer.parseInt(coef[2]);
+                    String[] cf = line.split(",");
+                    int a = Integer.parseInt(cf[0]);
+                    int b = Integer.parseInt(cf[1]);
+                    int c = Integer.parseInt(cf[2]);
                     parabole.add(new Parabola(a, b, c));
                 }
             } catch (FileNotFoundException e) {
