@@ -15,4 +15,9 @@ public class SistemCalcul extends Echipament{
     public String toString(){
         return super.toString() + tip_mon + ", " + c_hdd + ", " + so;
     }
+
+    @Override
+    public void afiseaza_detalii() {
+        this.toString();
+    }
 }

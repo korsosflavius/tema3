@@ -1,13 +1,13 @@
 package tema4;
 
-class Echipament {
+public abstract class Echipament {
 
-    private String denumire;
-    private int nr_inv;
-    private int pret;
-    private String zona_mag;
-    private Situatie situatie;
-    private TIP tip;
+    protected String denumire;
+    protected int nr_inv;
+    protected int pret;
+    protected String zona_mag;
+    protected  Situatie situatie;
+    protected TIP tip;
 
     public Echipament(String denumire, int nr_inv, int pret, String zona_mag, Situatie situatie, TIP tip) {
         this.denumire = denumire;
@@ -69,4 +69,5 @@ class Echipament {
     public String toString(){
         return "Echipament{" + denumire + ";" + nr_inv + ";" + pret + ";" + zona_mag + ";" + situatie + ", " + tip + ", ";
     }
+    public abstract void  afiseaza_detalii();
 }

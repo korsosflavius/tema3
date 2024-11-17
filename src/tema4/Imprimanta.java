@@ -17,4 +17,9 @@ public class Imprimanta extends Echipament {
     public String toString(){
             return super.toString() + ", " + ppm + ", " + rez + ", " + p_car + ", " + mod_tip;
     }
+
+    @Override
+    public void afiseaza_detalii() {
+        this.toString();
+    }
 }

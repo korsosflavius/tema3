@@ -15,4 +15,9 @@ public class Copiator extends Echipament {
     public String toString() {
         return super.toString() + ", " + p_ton + ", " + format;
     }
+
+    @Override
+    public void afiseaza_detalii() {
+        this.toString();
+    }
 }
